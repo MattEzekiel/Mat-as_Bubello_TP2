@@ -12,9 +12,19 @@
 <body>
     <header>
         <nav>
-            <div id="cont_b119367080aefde89f5da97176945b23">
-                <script type="text/javascript" async src="https://www.meteored.com.ar/wid_loader/b119367080aefde89f5da97176945b23"></script>
-            </div>
+            <a class="weatherwidget-io" href="https://forecast7.com/en/n25d52n54d59/foz-do-iguacu/" data-label_1="FOZ DO IGUAÇU" data-label_2="WEATHER" data-theme="original">FOZ DO IGUAÇU WEATHER</a>
+            <script>
+                ! function(d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (!d.getElementById(id)) {
+                        js = d.createElement(s);
+                        js.id = id;
+                        js.src = 'https://weatherwidget.io/js/widget.min.js';
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }
+                }(document, 'script', 'weatherwidget-io-js');
+
+            </script>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="informacion.html">Información</a></li>
@@ -25,14 +35,22 @@
         </nav>
     </header>
     <main>
-        <form action="gracias.html" method="get" enctype="application/x-www-form-urlencoded">
-            <input type="text" name="nombre" required placeholder="Mabel">
-            <input type="text" name="apellido" required placeholder="García">
-            <input type="text" name="dni" required placeholder="38.000.000">
-            <input type="email" name="email" required placeholder="ejemplo@ejemplo.com">
-            <input type="tel" name="telefono" placeholder="+541150000000">
-            <input type="submit" value="Enviar">
-        </form>
+      <div id="contact">
+                 <h1>Contacto</h1>
+                  <form action="gracias.html" method="get" enctype="application/x-www-form-urlencoded">
+                     <label for="fname">Nombre</label>
+                      <input type="text" name="nombre" required placeholder="Mabel">
+                      <label for="lname">Apellido</label>
+                      <input type="text" name="apellido" required placeholder="García">
+                      <label for="dne">DNI</label>
+                      <input type="text" name="dni" required placeholder="38.000.000">
+                      <label for="email">E-mail</label>
+                      <input type="email" name="email" required placeholder="ejemplo@ejemplo.com">
+                      <label for="tel">Teléfono</label>
+                      <input type="tel" name="telefono" placeholder="+541150000000 *Opcional*">
+                      <input type="submit" value="Enviar">
+                  </form>
+      </div>
     </main>
 </body>
 

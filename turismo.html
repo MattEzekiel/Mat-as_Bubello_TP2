@@ -14,12 +14,12 @@
     <script>
         $(function() {
             $("#accordion").accordion();
-     });
-        $(function(){
-    $( "#accordion" ).accordion({
-        collapsible: true        
-    });
-});
+        });
+        $(function() {
+            $("#accordion").accordion({
+                collapsible: true
+            });
+        });
     </script>
     <link rel="stylesheet" href="estilo.css" />
 </head>
@@ -27,9 +27,18 @@
 <body>
     <header>
         <nav>
-            <div id="cont_b119367080aefde89f5da97176945b23">
-                <script async src="https://www.meteored.com.ar/wid_loader/b119367080aefde89f5da97176945b23"></script>
-            </div>
+            <a class="weatherwidget-io" href="https://forecast7.com/en/n25d52n54d59/foz-do-iguacu/" data-label_1="FOZ DO IGUAÇU" data-label_2="WEATHER" data-theme="original">FOZ DO IGUAÇU WEATHER</a>
+            <script>
+                ! function(d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (!d.getElementById(id)) {
+                        js = d.createElement(s);
+                        js.id = id;
+                        js.src = 'https://weatherwidget.io/js/widget.min.js';
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }
+                }(document, 'script', 'weatherwidget-io-js');
+            </script>
             <ul id="nav">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="informacion.html">Información</a></li>
@@ -130,7 +139,7 @@
 
 
                     El parque es exitoso en la reproducción de muchas especies, entre ellas el periquito amarillo, ave en la lista de las amenazadas de extinción, como también la amazona brasileña, además del tucán, del chajá, de la grulla coronada, del cóndor real y de la magnífica arara azul.</p>
-        </div>
+            </div>
 
             <h2>SALTO DE PARACAÍDAS</h2>
             <div>
@@ -339,7 +348,7 @@
                 </p>
             </div>
 
-           <h2>Casinos</h2>
+            <h2>Casinos</h2>
             <div>
                 <img src="img/Casino/banner_casino.jpeg" alt="Banner de los Casinos" />
                 <span>La emoción de los grandes casinos</span>
@@ -654,6 +663,4 @@
             </div>
         </div>
     </main>
-</body>
-
-</html>
+</body></html>
