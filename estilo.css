@@ -1,0 +1,71 @@
+*{
+    width: 1200px;
+}
+img:hover{
+    
+    color: #424242; 
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -ms-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  opacity: 1;
+  transform: scale(1.15);
+  -ms-transform: scale(1.15); /* IE 9 */
+  -webkit-transform: scale(1.15); /* Safari and Chrome */
+}
+nav{
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+#nav li {
+  float: left;
+    text-align: center;
+}
+
+li a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 76px;
+    text-align: center;
+    text-transform: uppercase;
+}
+body{
+    font-family: 'Lato' ,sans-serif
+}
+
+p{
+    padding: 30px;
+}
+img{
+    padding-bottom: 20px;
+    text-align: center;
+}
