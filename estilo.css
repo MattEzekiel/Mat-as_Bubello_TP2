@@ -8,12 +8,15 @@ main {
     margin: auto;
 }
 
-nav{
+nav {
     margin-bottom: 18px;
 }
 
 .titulares {
     margin-left: -40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 img:hover {
@@ -80,6 +83,13 @@ h1 {
     transform: translate(-50%, -50%);
     color: white;
     font-style: italic;
+    z-index: 100;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.accordion {
+    z-index: 105;
+    height: auto;
 }
 
 body {
@@ -93,6 +103,10 @@ p {
 img {
     padding-bottom: 20px;
     text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 
 h2 {
@@ -152,6 +166,7 @@ footer {
     padding: 0;
     overflow: hidden;
     background-color: #1f567c;
+    color: white;
 }
 
 footer ul {
@@ -160,4 +175,27 @@ footer ul {
 
 li b {
     color: white;
+}
+
+.logo {
+    width: 10%;
+    float: left;
+}
+
+iframe {
+    /*    width="1200";*/
+    width: 80%;
+    height: 200px;
+    margin-left: 12%;
+}
+
+h3 {
+    display: block;
+    padding-top: 100px;
+    text-align: center;
+    font-size: 50px;
+}
+
+element.style{
+    height: none;
 }
