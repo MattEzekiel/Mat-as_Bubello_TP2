@@ -35,10 +35,11 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main id="tucan">
         <div id="contact">
             <h1>Contacto</h1>
             <img class="titulares" src="img/Banner/contacto-ciudad-atardecer.jpg" alt="Contacto">
+            <span id="cont">Podes ponerte en contacto con nosotros.</span>
             <form action="gracias.html" method="get" enctype="application/x-www-form-urlencoded">
                 <label for="fname">Nombre</label>
                 <input type="text" name="nombre" required placeholder="Mabel">
@@ -50,6 +51,21 @@
                 <input type="email" name="email" required placeholder="ejemplo@ejemplo.com">
                 <label for="tel">Teléfono</label>
                 <input type="tel" name="telefono" placeholder="+541150000000 *Opcional*">
+                <label for="conocer">¿Recorrió Foz preveiamente?</label>
+                <div class="recr">
+                    <input type="radio" name="conocer" value="Si">Si
+                </div>
+                <div class="recr">
+                    <input type="radio" name="conocer" value="No">No
+                </div>
+                <label for="seleccionar">
+                   Seleccione una razón
+                    <select name="razones">
+                        <option value="cnr">Quiero conocer</option>
+                        <option value="tur">Quiero hacer un tour</option>
+                        <option value="inf">Quiero más infromación</option>
+                    </select>
+                </label>
                 <input type="submit" value="Enviar">
             </form>
         </div>
