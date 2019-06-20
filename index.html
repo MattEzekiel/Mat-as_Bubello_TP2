@@ -24,7 +24,6 @@
                         fjs.parentNode.insertBefore(js, fjs);
                     }
                 }(document, 'script', 'weatherwidget-io-js');
-
             </script>
             <ul>
                 <li><a href="index.html" class="active">Inicio</a></li>
@@ -36,24 +35,40 @@
         </nav>
     </header>
     <main>
-        <img class="titulares" src="img/Banner/index-cataratas-del-iguazu.jpg" alt="Cataratas lao argentino">
+        <audio id="cata">
+            <source src="audio/cataratas.ogg" type="audio/ogg">
+            <source src="audio/cataratas.mp3" type="audio/mpeg">
+            Tu navegador es incompatible con este audio.
+        </audio>
+
+        <img class="titulares" src="img/Grandes/index-cataratas-del-iguazu.jpg" alt="Cataratas lado argentino" value="PLAY" onclick="play()" />
+
         <h1>Foz do Iguazú</h1>
         <p>
             <strong>Foz de Iguazú</strong> <i>(Foz do Iguaçu en portugués)</i> es una localidad de Brasil ubicada en el extremo oeste del estado de Paraná, en la <em>frontera con la Argentina y con el Paraguay.</em> <br />
 
-            Las principales fuentes de ingresos de Foz do Iguazú son el turismo y la producción de electricidad. La ciudad es famosa por sus atracciones turísticas, que atraen a personas de Brasil y del mundo entero. Entre ellas están las Cataratas del Iguazú, la represa-hidroeléctrica de Itaipú y el lugar donde el Río Iguazú tiene su desembocadura en el Paraná conocido como el área tres fronteras.
+            Las principales fuentes de ingresos de <strong>Foz do Iguazú</strong> son el turismo y la producción de electricidad. La ciudad es famosa por sus atracciones turísticas, que atraen a personas de Brasil y del mundo entero. Entre ellas están <strong>las Cataratas del Iguazú</strong>, <strong>la represa-hidroeléctrica de Itaipú</strong> y el lugar donde el Río Iguazú tiene su desembocadura en el Paraná conocido como el área <strong>tres fronteras</strong>.
         </p>
 
         <h2 class="center">Lugares para visitar en Foz de Iguazú</h2>
-        <h3>Represa Hidroeléctrica de Itaipú</h3>
 
+        <h3>Macuco Safári</h3>
         <p>
-            La represa de Itaipú (del guaraní, <i>"piedra que canta"</i>), la primera en tamaño en operación del mundo, es un emprendimiento binacional entre Brasil y Paraguay. Está ubicada sobre el río Paraná en la frontera entre estos dos países, en la ciudad de Hernandarias, a 14 km al norte del Puente de la Amistad. <a href="turismo.html#usina">Saber más.</a>
+            ¿Ya se ha imaginado usted en formar parte de uno de los siete paisajes más bellos del planeta? ¿También ya se ha imaginado estar bajo uno de los saltos que componen <strong>las Cataratas de Iguazú</strong> y darse un baño rápido? El paseo del <strong>Macuco Safari</strong> posibilita esta emoción inolvidable. <a href="turismo.html#macuco">Saber más.</a>
         </p>
         <h3>El Parque de las Aves</h3>
         <p>
-            Está localizado en un área de 17 hectáreas de selva, muy cerca al Parque Nacional de Iguazú. Los visitantes tienen la oportunidad de entrar en estos viveros para conocer de cerca la vida de las aves. Además de ellas, yacarés, anacondas, boas, monos tití y mariposas asombran a los visitantes. <a href="turismo.html#aves">Saber más.</a>
+            Está localizado en un área de 17 hectáreas de selva, muy cerca al <strong>Parque Nacional de Iguazú</strong>. Los visitantes tienen la oportunidad de entrar en estos viveros para conocer de cerca la vida de las aves. Además de ellas, yacarés, anacondas, boas, monos tití y mariposas asombran a los visitantes. <a href="turismo.html#aves">Saber más.</a>
         </p>
+        <h3>Paracaidismo</h3>
+        <p>
+            Después de conocer los atractivos de Foz do Iguaçu, ¿qué tal aprovechar desde lo alto el espectacular paisaje de la frontera, como dicen los paracaidistas? <a href="turismo.html#paracaidas">Saber más.</a>
+        </p>
+        <h3>Usina</h3>
+        <p>
+            Si el Río Iguazú abriga una de las siete maravillas de la naturaleza, en el Río Paraná, a solamente 38 kilómetros de distancia, está una de las siete maravillas de la ingeniería. La <strong>Usina hidroeléctrica de Itaipu</strong>, emprendimiento conjunto entre brasileños y paraguayos. <a href="turismo.html#usina">Saber más.</a>
+        </p>
+
         <article>
             <h2 class="center">Más información</h2>
             <p>
@@ -71,6 +86,13 @@
             </p>
         </article>
     </main>
+    <script>
+        function play() {
+            var audio = document.getElementById("cata");
+            audio.play();
+        }
+    </script>
+
     <footer>
         <img class="logo" src="img/logo-foz.png" alt="Logo foz do iguazu">
         <ul>
@@ -89,6 +111,6 @@
         <h3>Nuestra ubicación</h3>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115220.4213646135!2d-54.617004352985866!3d-25.517111233276893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f690ebae530a43%3A0x21979473b4c4a952!2sFoz+do+Igua%C3%A7u%2C+Estado+de+Paran%C3%A1%2C+Brasil!5e0!3m2!1ses-419!2sar!4v1560724706493!5m2!1ses-419!2sar" style="border:0" allowfullscreen></iframe>
     </footer>
-</body>
-
-</html>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="js/jquery/mouseover.js"></script>
+</body></html>

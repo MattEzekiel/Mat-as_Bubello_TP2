@@ -268,3 +268,25 @@ select {
 .delet {
     font-style: normal;
 }
+
+nav ul {
+    width: 750px;
+    margin: 0 auto;
+    list-style: none;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    text-align: center;
+    width: 150px;
+    text-decoration: none;
+}
+
+#art{
+    width: 560px;
+    height: 315px;
+}
