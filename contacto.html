@@ -42,16 +42,16 @@
             <span id="cont">Podes ponerte en contacto con nosotros.</span>
             <form action="gracias.html" method="get" enctype="application/x-www-form-urlencoded">
                 <label for="fname">Nombre</label>
-                <input type="text" name="nombre" required placeholder="Mabel">
+                <input type="text" name="nombre" required placeholder="Mabel" id="fname">
                 <label for="lname">Apellido</label>
-                <input type="text" name="apellido" required placeholder="García">
+                <input type="text" name="apellido" required placeholder="García" id="lname">
                 <label for="dne">DNI</label>
-                <input type="text" name="dni" required placeholder="38.000.000">
+                <input type="text" name="dni" required placeholder="38.000.000" id="dne">
                 <label for="email">E-mail</label>
-                <input type="email" name="email" required placeholder="ejemplo@ejemplo.com">
+                <input type="email" name="email" required placeholder="ejemplo@ejemplo.com" id="email">
                 <label for="tel">Teléfono</label>
-                <input type="tel" name="telefono" placeholder="+541150000000 *Opcional*">
-                <label for="conocer">¿Recorrió Foz preveiamente?</label>
+                <input type="tel" name="telefono" placeholder="+541150000000 *Opcional*" id="tel">
+                <label>¿Recorrió Foz preveiamente?</label>
                 <div class="recr">
                     <input type="radio" name="conocer" value="Si">Si
                 </div>
@@ -60,7 +60,7 @@
                 </div>
                 <label for="seleccionar">
                    Seleccione una razón
-                    <select name="razones">
+                    <select name="razones" id="seleccionar">
                         <option value="cnr">Quiero conocer</option>
                         <option value="tur">Quiero hacer un tour</option>
                         <option value="inf">Quiero más infromación</option>
