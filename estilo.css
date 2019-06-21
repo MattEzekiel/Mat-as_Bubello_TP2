@@ -40,7 +40,6 @@ nav ul {
     padding: 0;
     overflow: hidden;
     background-color: #1f567c;
-    /*    opacity: 0.6;*/
 }
 
 #nav li {
@@ -95,6 +94,8 @@ body {
 
 p {
     padding: 30px;
+    padding-left: 120px;
+    padding-right: 120px;
 }
 
 img {
@@ -286,7 +287,24 @@ nav ul li a {
     text-decoration: none;
 }
 
-#art{
+#art {
     width: 560px;
     height: 315px;
+}
+
+a{
+    text-decoration: none;
+    color: #1f567c;
+}
+select{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+.none{
+    text-decoration: none;
+    color: #1f567c;
 }
