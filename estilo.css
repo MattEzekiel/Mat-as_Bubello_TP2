@@ -58,12 +58,12 @@ li a {
 }
 
 li a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: #4CAF50;;
+    color: white;
 }
 
 a.active {
-    background-color: #4CAF50;
+    background-color: #4fcfcf;
     color: white;
 }
 
@@ -123,7 +123,7 @@ input[type=email],
 input[type=tel] {
 
     width: 100%;
-    padding: 12x;
+    padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
@@ -171,10 +171,23 @@ footer {
     overflow: hidden;
     background-color: #1f567c;
     color: white;
+    background-image: url(img/logo-foz.png);
+    background-repeat: no-repeat;
+    /*    width: 10%;*/
+    /*    float: left;*/
 }
 
-footer ul {
+footer ol {
+    display: block;
     list-style-type: none;
+}
+
+footer ol {
+    column-count: 5;
+}
+
+ol {
+    padding-top: 10px;
 }
 
 li b {
@@ -268,6 +281,7 @@ select {
 
 .delet {
     font-style: normal;
+    font-weight: normal;
 }
 
 nav ul {
@@ -292,11 +306,12 @@ nav ul li a {
     height: 315px;
 }
 
-a{
+a {
     text-decoration: none;
     color: #1f567c;
 }
-select{
+
+select {
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 10px;
@@ -304,7 +319,39 @@ select{
     font-size: 16px;
 }
 
-.none{
+.none {
     text-decoration: none;
     color: #1f567c;
+}
+
+#ven {
+    display: block;
+    text-align: center;
+}
+
+#reservados {
+    padding-right: 150px;
+    padding-left: 150px;
+    font-size: 30px;
+}
+
+@font-face{
+    font-family: 'Good Brush';
+    src: url(fonts/good_brush/GoodBrush.woff);
+}
+
+#brasil{
+    font-family: 'Good Brush';
+    font-size: 50px;
+    padding-top:30px; 
+}
+
+#municipio{
+    font-size: 20px;
+    color: white;
+}
+
+#conocer{
+    padding-left: 50px;
+    font-weight: bold;
 }
