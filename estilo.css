@@ -42,11 +42,13 @@ nav ul {
     background-color: #1f567c;
 }
 
+/*
 #nav li {
     float: left;
     text-align: center;
     display: inline;
 }
+*/
 
 li a {
     float: left;
@@ -354,4 +356,79 @@ select {
 #conocer{
     padding-left: 50px;
     font-weight: bold;
+}
+
+/*TABLETS*/
+@media screen and (max-width:800px){
+    
+}
+
+/*CELULAR*/
+@media screen and (max-width:480px){
+
+    body{
+        background-image: none;
+        background-color: #1f567c;
+    }
+    .burguer-nav{
+        display: block;
+        height: 50px;
+        width: 100%;
+        background: url(img/trama/hamburger-menu-icon-transparent-0.jpg) no-repeat 98% center;
+        background-color: #1f567c;
+        cursor: pointer;
+        background-size: 50px 50px;
+    }
+    header{
+        width: 113%;
+    }
+    main{
+        width: 113%;
+    }
+    footer{
+        width: 113%;
+    }
+    
+    header nav ul{
+        overflow: hidden;
+        height: 0;
+    }
+    
+    header nav ul.open{
+        height: auto;
+        position: absolute left;
+    }
+    
+    header nav ul li{
+        display: inline;
+        float: none;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+    }
+    header nav ul li{
+        color: #fff;
+        padding: 10px;
+        border-bottom: 1px solid #404040;
+        display: list-item;
+        margin: 0;
+        font-family: 'Lato', sans-serif;
+        margin: 1px;
+        padding-right: 30rem;
+    }
+    
+    h1{
+        position: static;
+        margin-top: 5rem;
+        text-align: center;
+        font-size: 5em;
+        margin-right: 5rem;
+        margin-left: 13rem;
+        padding-top: 10rem;
+        background-image: url(img/Grandes/gracias-cataratas-noche.jpg) no-repeat;
+        background-size:;
+    }
+    img{
+        display: none;
+    }
 }
