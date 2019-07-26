@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <title>Historia</title>
+    <title>Gracias</title>
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="estilo.css" />
@@ -31,23 +31,25 @@
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="informacion.html">Información</a></li>
-                <li><a href="historia.html" class="active">Historia</a></li>
+                <li><a href="historia.html">Historia</a></li>
                 <li><a href="turismo.html">Turismo</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
                 <li><a href="cv.php">CV</a></li>
             </ul>
         </nav>
     </header>
-    <main id="his">
-        <h1>Historia</h1>
-        <img class="titulares" src="img/Grandes/historia-parque-das-aves.jpg" alt="Parque das Aves">
-
-        <p>En los siglos XVII y XVIII el lugar donde se emplaza la actual <b>Foz do Iguaçu</b> fue sede de la <i>localidad hispanojesuítica de Santa María del Iguazú</i>; los bandeirantes portugueses y brasileños la destruyeron; luego recién en 1914 Brasil fundó en este punto tan estratégico la actual ciudad</p>
-
-        <h2 class="center">Toponimia</h2>
-        <p>El nombre de la ciudad (cuyo significado es <i>Boca del Iguazú</i>), fundada en 1914, era originalmente <i>Foz do Iguassu</i>, el cual fue cambiado por el nombre actual, <b>Foz do Iguaçu</b>, en el año 1945 debido a un acuerdo entre las academias de <i>Letras de Lisboa</i> y la brasileña, pasándose a usar la "Ç" con cedilla. En 2005, la ciudad fue interés de la prensa nacional a raíz de una polémica, cuando la cámara de concejales creó un proyecto de ley que cambiaba el nombre oficial de la ciudad al de Foz do Iguassu. El principal alegato era que la "Ç" (cedilla) causaba trastornos y situaciones incómodas para la comprensión de innumerables turistas que visitan la ciudad todos los años. Las dos "eses" serían entonces una manera de "universalizar" el nombre de la ciudad, rescatando la toponimia original, que fue cambiada en los primeros años del siglo XX. <br />
-
-            El proyecto por cambiar el nombre (de Foz do Iguaçu a Foz do Iguassu) fue aprobado el día 19 de octubre de 2005 por 8 votos a favor contra 4 votos en contra, en la primera y segunda discusión de la <i>cámara de concejales</i>. Entretanto, fue realizada una consulta popular para la aprobación o no del cambio de nombre. Según los resultados de una encuesta realizada por la municipalidad, donde fueron encuestados cerca de 4 mil personas, más del 90 % afirmaron estar en contra del cambio. Con la repercusión negativa de la población y de los medios de comunicación, el alcalde vetó la medida, y la cámara terminó acatando el veto.</p>
+    <main>
+        <h1>Trabajar con nosotros</h1>
+        <form class="cv-form" action="cv-form.php" method="post">
+            <input type="text" name="nombre" placeholder="Nombre Completo">
+            <input type="text" name="mail" placeholder="Ingresar E-mail">
+            <input type="text" name="adjunto" placeholder="Adjuntar archivo">
+            <textarea name="mensaje" placeholder="Mensaje"></textarea>
+            <button type="submit" name="enviar">Enviar Mail</button>
+            
+            
+            
+        </form>
     </main>
     <footer>
       <span class="center" id="reservados"><!-- Dise;ado y desarrollado por -->Matías Ezequiel Bubello - Diseño y Desarrollo Web - Profesora Mabel García - TP3</span>

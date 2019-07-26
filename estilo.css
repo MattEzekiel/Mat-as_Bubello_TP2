@@ -60,7 +60,8 @@ li a {
 }
 
 li a:hover {
-    background-color: #4CAF50;;
+    background-color: #4CAF50;
+    ;
     color: white;
 }
 
@@ -185,11 +186,7 @@ footer ol {
 }
 
 footer ol {
-    column-count: 5;
-}
-
-ol {
-    padding-top: 10px;
+    width: 75%;
 }
 
 li b {
@@ -209,7 +206,8 @@ iframe {
 
 h3 {
     display: block;
-    padding-top: 100px;
+    /*    padding-top: 100px;*/
+    padding-top: 2rem;
     text-align: center;
     font-size: 30px;
 }
@@ -337,40 +335,39 @@ select {
     font-size: 30px;
 }
 
-@font-face{
+@font-face {
     font-family: 'Good Brush';
     src: url(fonts/good_brush/GoodBrush.woff);
 }
 
-#brasil{
+#brasil {
     font-family: 'Good Brush';
     font-size: 50px;
-    padding-top:30px; 
+    padding-top: 30px;
 }
 
-#municipio{
+#municipio {
     font-size: 20px;
     color: white;
 }
 
-#conocer{
+#conocer {
     padding-left: 50px;
     font-weight: bold;
 }
 
 /*TABLETS*/
-@media screen and (max-width:800px){
-    
-}
+@media screen and (max-width:800px) {}
 
 /*CELULAR*/
-@media screen and (max-width:480px){
+@media screen and (max-width:480px) {
 
-    body{
+    body {
         background-image: none;
         background-color: #1f567c;
     }
-    .burguer-nav{
+
+    .burguer-nav {
         display: block;
         height: 50px;
         width: 100%;
@@ -379,34 +376,41 @@ select {
         cursor: pointer;
         background-size: 50px 50px;
     }
-    header{
+
+    header {
         width: 113%;
     }
-    main{
+
+    main {
         width: 113%;
     }
-    footer{
+
+    footer {
         width: 113%;
     }
-    
-    header nav ul{
+
+    header nav ul {
         overflow: hidden;
         height: 0;
     }
-    
-    header nav ul.open{
+
+    header nav ul.open {
         height: auto;
-        position: absolute left;
+        position: relative center;
+        width: 50%;
+        padding-right: 2rem;
+        padding-left: 3rem;
     }
-    
-    header nav ul li{
+
+    header nav ul li {
         display: inline;
         float: none;
         text-align: left;
         width: 100%;
         margin: 0;
     }
-    header nav ul li{
+
+    header nav ul li {
         color: #fff;
         padding: 10px;
         border-bottom: 1px solid #404040;
@@ -416,8 +420,8 @@ select {
         margin: 1px;
         padding-right: 30rem;
     }
-    
-    h1{
+
+    h1 {
         position: static;
         margin-top: 5rem;
         text-align: center;
@@ -425,10 +429,23 @@ select {
         margin-right: 5rem;
         margin-left: 13rem;
         padding-top: 10rem;
-        background-image: url(img/Grandes/gracias-cataratas-noche.jpg) no-repeat;
-        background-size:;
     }
-    img{
+
+    img {
         display: none;
     }
-}
+
+    h3 {
+        padding-top: -50px;
+        position: relative;
+        padding-right: 8rem;
+        padding-left: 8rem;
+    }
+
+    h1 {
+        font-size: 5em;
+        position: absolute;
+        top: 3em;
+/*        right: 5rem;*/
+        left: 5rem;
+    }
