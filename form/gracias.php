@@ -1,9 +1,17 @@
+<?php
+$nombre = $_POST ['nombre'];
+$email = $_POST ['email'];
+$sexo = $_POST ['sexo'];
+$mensaje = $_POST ['mensaje'];
+?>
+
+
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Gracias</title>
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet" />
@@ -34,13 +42,14 @@
                 <li><a href="historia.html">Historia</a></li>
                 <li><a href="turismo.html">Turismo</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="cv.php">CV</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <h1>¡Gracias!</h1>
-        <img class="titulares" src="img/Grandes/gracias-cataratas-noche.jpg" alt="Gracias">
+        <div class="grcs">
+            <img class="titulares" src="img/Grandes/gracias-cataratas-noche.jpg" alt="Gracias">
+        </div>
     </main>
     <footer>
       <span class="center" id="reservados"><!-- Dise;ado y desarrollado por -->Matías Ezequiel Bubello - Diseño y Desarrollo Web - Profesora Mabel García - TP3</span>

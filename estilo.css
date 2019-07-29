@@ -42,14 +42,6 @@ nav ul {
     background-color: #1f567c;
 }
 
-/*
-#nav li {
-    float: left;
-    text-align: center;
-    display: inline;
-}
-*/
-
 li a {
     float: left;
     color: #f2f2f2;
@@ -206,8 +198,8 @@ iframe {
 
 h3 {
     display: block;
-    /*    padding-top: 100px;*/
-    padding-top: 2rem;
+    margin: 10px;
+    padding-top: 6rem;
     text-align: center;
     font-size: 30px;
 }
@@ -357,14 +349,13 @@ select {
 }
 
 /*TABLETS*/
-@media screen and (max-width:800px) {}
-
-/*CELULAR*/
-@media screen and (max-width:480px) {
-
+@media screen and (max-width:800px) {
     body {
+        position: relative;
         background-image: none;
         background-color: #1f567c;
+        overflow-x: hidden;
+        width: 100%;
     }
 
     .burguer-nav {
@@ -377,16 +368,20 @@ select {
         background-size: 50px 50px;
     }
 
-    header {
-        width: 113%;
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #1f567c;
     }
 
-    main {
-        width: 113%;
-    }
-
-    footer {
-        width: 113%;
+    li a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
     }
 
     header nav ul {
@@ -397,23 +392,18 @@ select {
     header nav ul.open {
         height: auto;
         position: relative center;
-        width: 50%;
-        padding-right: 2rem;
-        padding-left: 3rem;
+        width: 100%;
+        padding-right: 10rem;
+        padding-left: 25rem;
     }
 
     header nav ul li {
-        display: inline;
         float: none;
         text-align: left;
-        width: 100%;
+        width: 50%;
         margin: 0;
-    }
-
-    header nav ul li {
         color: #fff;
         padding: 10px;
-        border-bottom: 1px solid #404040;
         display: list-item;
         margin: 0;
         font-family: 'Lato', sans-serif;
@@ -421,18 +411,15 @@ select {
         padding-right: 30rem;
     }
 
+
     h1 {
         position: static;
-        margin-top: 5rem;
+        margin-top: 8rem;
         text-align: center;
-        font-size: 5em;
+        font-size: 10em;
         margin-right: 5rem;
-        margin-left: 13rem;
+        margin-left: 20rem;
         padding-top: 10rem;
-    }
-
-    img {
-        display: none;
     }
 
     h3 {
@@ -443,9 +430,191 @@ select {
     }
 
     h1 {
-        font-size: 5em;
-        position: absolute;
-        top: 3em;
-/*        right: 5rem;*/
-        left: 5rem;
+        font-size: 0px;
+    }
+
+    .titulares {
+        visibility: hidden;
+    }
+
+    .contct {
+        background-image: url(img/responsive/contacto-ciudad-atardecer-tablet.jpg);
+        margin-top: -19rem;
+        background-repeat: no-repeat;
+    }
+
+    .indx {
+        background-image: url(img/responsive/index-cataratas-del-iguazu-tablet.jpg);
+        background-repeat: no-repeat;
+        margin-bottom: -16rem;
+    }
+
+    .hstr {
+        background-image: url(img/responsive/historia-parque-das-aves-tablet.jpg);
+        background-repeat: no-repeat;
+        margin-bottom: -2rem;
+        margin-top: -10rem;
+    }
+
+    .infr {
+        background-image: url(img/responsive/informacion-ciudad-tablet.jpg);
+        background-repeat: no-repeat;
+    }
+
+    .grcs {
+        background-image: url(img/responsive/gracias-cataratas-noche-TABLET.jpg);
+        background-repeat: no-repeat;
+        margin-top: -10rem;
+        margin-bottom: -5rem;
+    }
+    
+    .cv{
+       background-image: url(img/responsive/cv-juntos-tablet.jpg);
+        background-repeat: no-repeat; 
+    }
+
+
+
+}
+
+/*CELULAR*/
+@media screen and (max-width:480px) {
+
+    body {
+        position: relative;
+        background-image: none;
+        background-color: #1f567c;
+        overflow-x: hidden;
+        width: 90%;
+    }
+
+    .burguer-nav {
+        display: block;
+        height: 50px;
+        width: 100%;
+        background: url(img/trama/hamburger-menu-icon-transparent-0.jpg) no-repeat 98% center;
+        background-color: #1f567c;
+        cursor: pointer;
+        background-size: 50px 50px;
+    }
+
+    header nav ul {
+        overflow: hidden;
+        height: 0;
+    }
+
+    header nav ul.open {
+        height: auto;
+        position: relative center;
+        width: 100%;
+        padding-right: 4rem;
+        padding-left: 7rem;
+    }
+
+    header nav ul li {
+        display: inline;
+        float: none;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        color: #fff;
+        padding: 10px;
+        display: list-item;
+        margin: 0;
+        font-family: 'Lato', sans-serif;
+        margin-left: 2rem;
+        margin-right: 3rem;
+    }
+
+    h1 {
+        font-size: 0px;
+    }
+
+    h3 {
+        padding-top: -50px;
+        position: relative;
+        padding-right: 8rem;
+        padding-left: 8rem;
+    }
+
+    .titulares {
+        visibility: hidden;
+    }
+
+    .contct {
+        background-image: url(img/responsive/contacto-ciudad-atardecer-tablet.jpg);
+        margin-top: -19rem;
+        background-repeat: no-repeat;
+    }
+
+    .indx {
+        background-image: url(img/responsive/index-cataratas-del-iguazu-celular.jpg);
+        background-repeat: no-repeat;
+        /*        margin-bottom: -16rem;*/
+    }
+
+    .hstr {
+        background-image: url(img/responsive/historia-parque-das-aves-celular.jpg);
+        background-repeat: no-repeat;
+        padding-bottom: 2rem;
+        */
+    }
+
+    .infr {
+        background-image: url(img/responsive/informacion-ciudad-celular.jpg);
+        background-repeat: no-repeat;
+        margin-right: -2rem;
+        margin-left: -1.5rem;
+    }
+
+
+    .grcs {
+        background-image: url(img/responsive/gracias-cataratas-noche-celular.jpg);
+        background-repeat: no-repeat;
+        padding-bottom: 80px;
+    }
+    
+    .cv{
+       background-image: url(img/responsive/cv-juntos-celular.jpg);
+        background-repeat: no-repeat; 
+    }
+
+    ol li {
+        display: block;
+        width: 50%;
+    }
+
+    .panel p {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    
+    .panel h3{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    #delei{
+        background-color: #1f567c;
+        color: #fff;
+        margin-top: -15rem;
+    }
+    
+    #his p{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    
+    #reservados{
+        font-size: 16px;
+    }
+    
+    main p{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    
+    main h3{
+        padding-left: 2rem;
+        padding-right: 2rem;
     }

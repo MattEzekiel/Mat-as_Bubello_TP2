@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <title>Gracias</title>
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>CV</title>
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="estilo.css" />
@@ -14,7 +14,7 @@
 <body>
     <header>
         <nav>
-           <a class="burguer-nav"></a>
+            <a class="burguer-nav"></a>
             <a class="weatherwidget-io" href="https://forecast7.com/en/n25d52n54d59/foz-do-iguacu/" data-label_1="FOZ DO IGUAÇU" data-label_2="WEATHER" data-theme="original">FOZ DO IGUAÇU WEATHER</a>
             <script>
                 ! function(d, s, id) {
@@ -33,27 +33,32 @@
                 <li><a href="informacion.html">Información</a></li>
                 <li><a href="historia.html">Historia</a></li>
                 <li><a href="turismo.html">Turismo</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="cv.php">CV</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Trabajar con nosotros</h1>
-        <form class="cv-form" action="cv-form.php" method="post">
-            <input type="text" name="nombre" placeholder="Nombre Completo">
-            <input type="text" name="mail" placeholder="Ingresar E-mail">
-            <input type="text" name="adjunto" placeholder="Adjuntar archivo">
-            <textarea name="mensaje" placeholder="Mensaje"></textarea>
-            <button type="submit" name="enviar">Enviar Mail</button>
-            
-            
-            
+        <h1>Trabajá con nosotros</h1>
+       <div class="cv">
+             <img class="titulares" src="img/Grandes/cv-juntos.jpg" alt="trabajemos juntos" />
+        </div>
+        <form action="form/gracias.php" method="post" enctype="multipart/form-data">
+            <div><span>Nombre completo</span><input type="text" name="nombre" placeholder="Alex Campo" required></div>
+            <div><span>E-mail</span><input type="text" name="email" placeholder="ejemplo@ejemplo.com" required></div>
+            <div>
+                <span>Sexo</span>
+                <label><input type="radio" name="sexo" value="hombre">Hombre</label>
+                <label><input type="radio" name="sexo" value="mujer"> Mujer</label>
+            </div>
+            <div><span>Mensaje</span> <textarea name="mensaje" cols="50" rows="15"></textarea></div>
+            <div><input type="file" name="archivo" value="Adjuntar CV" required></div>
+            <div><input type="submit" value="Enviar mail"></div>
         </form>
     </main>
     <footer>
-      <span class="center" id="reservados"><!-- Dise;ado y desarrollado por -->Matías Ezequiel Bubello - Diseño y Desarrollo Web - Profesora Mabel García - TP3</span>
-      <span class="center" id="brasil">¡Brasil Sensacional!</span>
+        <span class="center" id="reservados">
+            <!-- Diseñado y desarrollado por -->Matías Ezequiel Bubello - Diseño y Desarrollo Web - Profesora Mabel García - TP3</span>
+        <span class="center" id="brasil">¡Brasil Sensacional!</span>
         <ol>
             <li><b>Lugares a conocer</b></li>
             <li><a href="turismo.html#macuco">Macuco Safari</a></li>

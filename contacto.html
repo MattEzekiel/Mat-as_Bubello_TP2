@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Contacto</title>
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet" />
@@ -34,17 +34,18 @@
                 <li><a href="historia.html">Historia</a></li>
                 <li><a href="turismo.html">Turismo</a></li>
                 <li><a href="contacto.html" class="active">Contacto</a></li>
-                <li><a href="cv.php">CV</a></li>
             </ul>
         </nav>
     </header>
     <main id="tucan">
         <div id="contact">
             <h1>Contacto</h1>
-            <img class="titulares" src="img/Grandes/contacto-ciudad-atardecer.jpg" alt="Contacto">
+            <div class="contct">
+                <img class="titulares" src="img/Grandes/contacto-ciudad-atardecer.jpg" alt="Contacto">
+            </div>
             <h2 id="ven">Vení a conocer FOZ</h2>
             <span id="cont">Ponete en contacto con nosotros.</span>
-            <form action="gracias.html" method="get" enctype="application/x-www-form-urlencoded">
+            <form action="form/gracias.php" method="get" enctype="application/x-www-form-urlencoded">
                 <label for="fname">Nombre</label>
                 <input type="text" name="nombre" required placeholder="Mabel" id="fname">
                 <label for="lname">Apellido</label>
@@ -119,7 +120,7 @@
         </div>
     </main>
     <footer>
-      <span class="center" id="reservados"><!-- Dise;ado y desarrollado por -->Matías Ezequiel Bubello - Diseño y Desarrollo Web - Profesora Mabel García - TP3</span>
+      <span class="center" id="reservados"><!-- Diseñado y desarrollado por -->Matías Ezequiel Bubello - Diseño y Desarrollo Web - Profesora Mabel García - TP3</span>
       <span class="center" id="brasil">¡Brasil Sensacional!</span>
         <ol>
             <li><b>Lugares a conocer</b></li>
